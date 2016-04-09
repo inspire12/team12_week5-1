@@ -11,7 +11,21 @@ import org.junit.Test;
 public class AppTest 
 {
 	@Test
-	public void sample(){
-		assertEquals(0, 0);
+	public void simpleGold(){
+		Calculator c = new Calculator(1, 0, 1);
+		c.basicFee();
+		assertEquals(4995, c.bill());
+	}
+	@Test
+	public void simpleSilver(){
+		Calculator c = new Calculator(2, 0, 1);
+		c.basicFee();
+		assertEquals(2995, c.bill());
+	}
+	public void OneLineAddedGold(){
+		Calculator c = new Calculator(1, 0, 2);
+		c.basicFee();
+		c.additinalFee();
+		assertEquals(4995+1450, 0);
 	}
 }
