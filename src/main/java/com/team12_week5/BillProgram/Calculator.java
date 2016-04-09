@@ -4,7 +4,9 @@ public class Calculator {
 	private BasicPlan plan = null;
 	private double bill = 0;
 	
-	public Calculator(int aPlan, int aMinite, int aLine){
+	public Calculator(){
+	}
+	public void init(int aPlan, int aMinite, int aLine){
 		if(aPlan == 1)
 			this.plan = new Gold(aMinite, aLine);
 		else if(aPlan == 2)

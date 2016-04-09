@@ -10,22 +10,26 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+	Calculator c = new Calculator();
 	@Test
 	public void simpleGold(){
-		Calculator c = new Calculator(1, 0, 1);
+		c.init(1,0,1);
 		c.basicFee();
 		assertEquals(4995, c.bill());
 	}
 	@Test
 	public void simpleSilver(){
-		Calculator c = new Calculator(2, 0, 1);
+		c.init(2, 0, 1);
 		c.basicFee();
 		assertEquals(2995, c.bill());
 	}
 	public void OneLineAddedGold(){
-		Calculator c = new Calculator(1, 0, 2);
+		int line = 2;
+		c.init(1, 0, line);
 		c.basicFee();
-		c.additinalFee();
+		for(int i=0; i<line; i++){
+			c.additinalFee();
+		}
 		assertEquals(4995+1450, 0);
 	}
 }
