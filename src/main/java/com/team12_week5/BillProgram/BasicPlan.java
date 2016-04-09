@@ -1,12 +1,12 @@
 package com.team12_week5.BillProgram;
 
 public class BasicPlan {
-	protected double basicFee; 
-	protected double additionalFee; 
-	protected double freeTime; 
-	protected double excessFee; 
-	protected double minit; 
-	protected double line; 
+	protected double basicFee=0; 
+	protected double additionalFee=0; 
+	protected double freeTime=0; 
+	protected double excessFee=0; 
+	protected double minit=0; 
+	protected double line=0; 
 	public BasicPlan(double aBasicFee, double aAdditionalFee, double aFreeTime, double aExcessFee, double aMinit, double aLine){
 		this.basicFee = aBasicFee;
 		this.additionalFee = aAdditionalFee;
