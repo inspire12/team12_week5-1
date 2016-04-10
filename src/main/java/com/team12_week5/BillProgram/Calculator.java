@@ -13,8 +13,9 @@ public class Calculator {
 			this.plan = new Silver(aMinite, aLine);
 		this.bill = 0;
 	}
-	public void additinalFee(){
-		bill += plan.getAdditinalFee();
+	public void additinalFee(int aLine){
+		for(int i=0; i<aLine; i++)
+			bill += plan.getAdditinalFee();
 	}
 	public void basicFee(){
 		bill += plan.getBasicFee();
