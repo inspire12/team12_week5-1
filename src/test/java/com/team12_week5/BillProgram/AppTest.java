@@ -27,9 +27,14 @@ public class AppTest
 		int line = 2;
 		c.init(1, 0, line);
 		c.basicFee();
-		for(int i=0; i<line; i++){
-			c.additinalFee();
-		}
+		c.additinalFee(2);
 		assertEquals(4995+1450, 0);
+	}
+	public void ManyLineAddedSilver(){
+		int line = 3;
+		c.init(2, 0, line);
+		c.basicFee();
+		c.additinalFee(3);
+		assertEquals(2995+2150, 0);
 	}
 }
