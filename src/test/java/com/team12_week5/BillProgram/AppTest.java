@@ -29,7 +29,7 @@ public class AppTest
 		c.init(1, 0, line);
 		c.basicFee();
 		c.additinalFee(2);
-		assertEquals(4995+1450, 0);
+		assertEquals(4995+1450, c.bill());
 	}
 	@Test
 	public void manyLineAddedSilver(){
@@ -37,6 +37,6 @@ public class AppTest
 		c.init(2, 0, line);
 		c.basicFee();
 		c.additinalFee(3);
-		assertEquals(2995+2150, 0);
+		assertEquals(2995+2150, c.bill());
 	}
 }
