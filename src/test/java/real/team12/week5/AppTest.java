@@ -21,11 +21,6 @@ public class AppTest
 	}
 	
 	@Test
-	public void mainTest(){
-		App.main(new String[]{"test"});
-	}
-	
-	@Test
 	public void simpleGold(){
 		c.init(1,0,1);
 		c.basicFee();
