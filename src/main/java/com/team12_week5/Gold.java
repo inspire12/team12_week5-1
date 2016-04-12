@@ -1,4 +1,4 @@
-package com.team12_week5.BillProgram;
+package com.team12_week5;
 
 public class Gold extends BasicPlan{
 	public Gold(double aMinit, double aLine){

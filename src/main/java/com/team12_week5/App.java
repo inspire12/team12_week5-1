@@ -1,4 +1,4 @@
-package com.team12_week5.BillProgram;
+package com.team12_week5;
 
 /**
  * Hello world!
