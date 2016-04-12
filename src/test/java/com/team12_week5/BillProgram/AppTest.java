@@ -23,14 +23,16 @@ public class AppTest
 		c.basicFee();
 		assertEquals(2995, c.bill());
 	}
-	public void OneLineAddedGold(){
+	@Test
+	public void oneLineAddedGold(){
 		int line = 2;
 		c.init(1, 0, line);
 		c.basicFee();
 		c.additinalFee(2);
 		assertEquals(4995+1450, 0);
 	}
-	public void ManyLineAddedSilver(){
+	@Test
+	public void manyLineAddedSilver(){
 		int line = 3;
 		c.init(2, 0, line);
 		c.basicFee();
