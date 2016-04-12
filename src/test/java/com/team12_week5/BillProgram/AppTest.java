@@ -34,7 +34,6 @@ public class AppTest
 		c.init(1, 0, line);
 		c.basicFee();
 		c.additinalFee(line);
-		System.out.println(c.bill());
 		assertEquals(4995+1450, c.bill());
 	}
 	@Test
@@ -43,7 +42,6 @@ public class AppTest
 		c.init(2, 0, line);
 		c.basicFee();
 		c.additinalFee(line);
-		System.out.println(c.bill());
 		assertEquals(2995+4300, c.bill());
 	}
 }
