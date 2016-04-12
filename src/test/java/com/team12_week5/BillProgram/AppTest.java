@@ -2,6 +2,7 @@ package com.team12_week5.BillProgram;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
@@ -10,7 +11,11 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-	Calculator c = new Calculator();
+	private Calculator c;
+	@Before
+	public void setUp(){
+		c = new Calculator();
+	}
 	@Test
 	public void simpleGold(){
 		c.init(1,0,1);
@@ -28,15 +33,17 @@ public class AppTest
 		int line = 2;
 		c.init(1, 0, line);
 		c.basicFee();
-		c.additinalFee(2);
+		c.additinalFee(line);
+		System.out.println(c.bill());
 		assertEquals(4995+1450, c.bill());
 	}
 	@Test
-	public void manyLineAddedSilver(){
+	public void twoLineAddedSilver(){
 		int line = 3;
 		c.init(2, 0, line);
 		c.basicFee();
-		c.additinalFee(3);
-		assertEquals(2995+2150, c.bill());
+		c.additinalFee(line);
+		System.out.println(c.bill());
+		assertEquals(2995+4300, c.bill());
 	}
 }
