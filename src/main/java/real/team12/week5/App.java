@@ -1,4 +1,4 @@
-package com.team12_week5;
+package real.team12.week5;
 
 /**
  * Hello world!

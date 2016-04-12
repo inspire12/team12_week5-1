@@ -1,9 +1,11 @@
-package com.team12_week5;
+package real.team12.week5;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import real.team12.week5.Calculator;
 
 
 /**
