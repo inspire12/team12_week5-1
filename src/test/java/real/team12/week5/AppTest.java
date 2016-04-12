@@ -18,6 +18,12 @@ public class AppTest
 	public void setUp(){
 		c = new Calculator();
 	}
+	
+	@Test
+	public void mainTest(){
+		App.main(new String[]{"test"});
+	}
+	
 	@Test
 	public void simpleGold(){
 		c.init(1,0,1);
