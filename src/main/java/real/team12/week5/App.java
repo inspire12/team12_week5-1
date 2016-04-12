@@ -10,12 +10,10 @@ import java.util.logging.Logger;
 public class App 
 {
 	private static Logger mLog;
-	private App(){
-		mLog = Logger.getLogger(App.class.getName());
-	}
 
     public static void main( String[] args )
     {
+    	mLog = Logger.getLogger(App.class.getName());
     	mLog.log(Level.INFO, "Cheer up!");
     }
 }

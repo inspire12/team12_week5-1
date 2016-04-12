@@ -14,6 +14,7 @@ import real.team12.week5.Calculator;
 public class AppTest 
 {
 	private Calculator c;
+	
 	@Before
 	public void setUp(){
 		c = new Calculator();
