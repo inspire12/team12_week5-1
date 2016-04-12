@@ -7,7 +7,7 @@ public class Calculator {
 	public void init(int aPlan, int aMinite, int aLine){
 		if(aPlan == 1)
 			this.plan = new Gold(aMinite, aLine);
-		else if(aPlan == 2)
+		else
 			this.plan = new Silver(aMinite, aLine);
 		this.bill = 0;
 	}
