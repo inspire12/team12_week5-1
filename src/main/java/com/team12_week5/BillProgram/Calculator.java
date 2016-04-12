@@ -14,7 +14,7 @@ public class Calculator {
 		this.bill = 0;
 	}
 	public void additinalFee(int aLine){
-		for(int i=0; i<aLine; i++)
+		for(int i=1; i<aLine; i++)
 			bill += plan.getAdditinalFee();
 	}
 	public void basicFee(){
