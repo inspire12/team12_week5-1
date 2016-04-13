@@ -1,4 +1,4 @@
-package com.team12_week5.BillProgram;
+package real.team12.week5;
 
 public class Silver extends BasicPlan{
 	public Silver(double aMinit, double aLine){

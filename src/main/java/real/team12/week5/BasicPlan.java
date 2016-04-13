@@ -1,4 +1,4 @@
-package com.team12_week5.BillProgram;
+package real.team12.week5;
 
 public class BasicPlan {
 	protected double basicFee=0; 
@@ -28,10 +28,4 @@ public class BasicPlan {
 	public double getExcessFee() {
 		return excessFee;
 	}
-	public double getMinit() {
-		return minit;
-	}
-	public double getLine() {
-		return line;
-	}	
 }
