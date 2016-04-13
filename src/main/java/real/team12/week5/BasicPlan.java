@@ -21,5 +21,11 @@ public class BasicPlan {
 	}
 	public double getAdditinalFee() {
 		return additionalFee;
-	}	
+	}
+	public double getFreeTime() {
+		return freeTime;
+	}
+	public double getExcessFee() {
+		return excessFee;
+	}
 }

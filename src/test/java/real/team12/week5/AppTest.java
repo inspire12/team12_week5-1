@@ -48,4 +48,24 @@ public class AppTest
 		c.additinalFee(line);
 		assertEquals(2995+4300, c.bill());
 	}
+	@Test
+	public void oneFamilyDiscountSilver(){
+		int line = 4;
+		c.init(2, 0, line);
+		c.basicFee();
+		c.additinalFee(line);
+		c.familyDiscont(line);
+		assertEquals(2995+4300+500, c.bill());
+	}
+	@Test
+	public void basicSilverUseMinit(){
+		int line = 1;
+		int minit = 600;
+		c.init(2, minit, line);
+		c.basicFee();
+		c.additinalFee(line);
+		c.familyDiscont(line);
+		c.excessFee(minit);
+		assertEquals(2995+5400, c.bill());
+	}
 }
