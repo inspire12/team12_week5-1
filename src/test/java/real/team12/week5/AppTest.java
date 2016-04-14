@@ -15,8 +15,8 @@ public class AppTest
 {
 	private Calculator c;
 	
-	final int gold =1;
-	final int silver =2;
+	final static int gold =1;
+	final static int silver =2;
 	@Before
 	public void setUp(){
 		c = new Calculator();
