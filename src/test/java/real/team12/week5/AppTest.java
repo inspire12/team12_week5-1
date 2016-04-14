@@ -132,29 +132,4 @@ public class AppTest
 		c.excessFee(minit);
 		assertEquals(2995+5400, c.bill());
 	}
-	@Test
-	public void basicGoldUseMinit(){
-		int line = 1;
-		int minit = 1600;
-		c.init(gold, minit, line);
-		c.basicFee();
-		c.additinalFee(line);
-		c.familyDiscont(line);
-		c.excessFee(minit);
-		assertEquals(4995+(minit-1000)*45, c.bill());
-	}
-	@Test
-	public void basicSilverUseMinit(){
-		int line = 1;
-		int minit = 1600;
-		c.init(silver, minit, line);
-		c.basicFee();
-		c.additinalFee(line);
-		c.familyDiscont(line);
-		c.excessFee(minit);
-		assertEquals(2995+(minit-500)*54, c.bill());
-	}
-	
-	
-	
 }
